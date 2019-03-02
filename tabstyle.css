@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);      
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);     
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+	color: #FFF;
+	text-align: center;
+}
+h2{
+    margin-bottom: 30px;
+    color: #3F3A67;
+}
+.container {
+max-width:600px;
+margin: 0 auto;
+display: flex;
+background: #fff;
+transform: translateY(30%);
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -20px 10px -20px 30px;
+    background-color: #7ed386;
+    box-shadow: 4px 0px 10px 0 rgba(0,0,0,0.3);
+    height: 100%;
+}
+
+.tab {
+	border: 1px solid transparent;
+	display: inline-block;
+	text-decoration: none;
+    padding: 30px 30px;
+    color: #FFF;
+    background: transparent;
+}
+.tab:hover{
+        color: #FFF;
+    background: #3F3A67;
+}
+.tab.active {
+	color: #FFF;
+	background: #3F3A67;
+    position: relative;
+}
+
+.content {
+        background: linear-gradient(to bottom right, white, #F8F8F8);
+        box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+        display: none;
+        padding: 1.5rem 2.5rem;
+        color: #4a5666;
+        min-height: 320px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+.content h1{
+    color:gray;
+}
+.show {
+	display: flex;
+ 
+}
+.show .fadein{
+       animation: fadein 0.7s ease;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.signin label{
+        display: flex;
+        margin-bottom: 10px;
+        color:#b7b3b3;
+}
+.signin input{
+        display: flex;
+        padding:0;
+        border:0;
+        background: #f1f1f1;
+        min-height: 38px;
+        border-radius: 5px;
+        min-width: 250px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+}
+.signin input:focus{
+       outline:0;
+}
+.signin .btn{
+        background-color: #3F3A67;
+        padding: 10px 26px;
+        border-radius: 5px;
+        color: #FFF;
+        margin: 15px 0;
+        display: inline-block;
+        font-size: 13px;
+}
+
+
+  

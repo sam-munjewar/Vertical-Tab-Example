@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="tabstyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<nav class="tabs">
+        <a class="tab active" href="#one"><i class="material-icons"> dashboard </i></a>
+        <a class="tab" href="#two"><i class="material-icons"> mail_outline </i></a>
+		<a class="tab" href="#three"><i class="material-icons"> folder_open </i></a> 
+        <a class="tab" href="#four"><i class="material-icons"> cloud_queue </i></a> 
+		<a class="tab" href="#five"><i class="material-icons"> power_settings_new </i></a> 
+	</nav>
+
+	<div id="one" class="content show">
+       <div class="fadein">
+            <form class="signin" action="" method="post" name="form">
+            	<h2>Login Form</h2>
+	          <label for="username">Username</label>
+	          <input  type="text" name="username" placeholder=""/>
+	          <label for="password">Password</label>
+	          <input  type="text" name="password" placeholder=""/>
+	          <div class="btn-wrapper">
+            <a class="btn">Sign in</a>
+          </div>
+		</form>
+        </div>
+    </div>
+
+	<div id="two" class="content">
+         <div class="fadein">
+          <h1>Tab 2</h1> 
+               
+        </div>
+    </div>
+
+	<div id="three" class="content">
+       <div class="fadein">
+            <h1>Tab 3</h1>
+        </div>
+    </div>
+    <div id="four" class="content">
+       <div class="fadein">
+            <h1>Tab 4</h1>
+        </div>
+    </div>
+    <div id="five" class="content">
+       <div class="fadein">
+            <h1>Tab 5</h1>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	   $(".tabs").on("click", ".tab", function(e) {
+            	e.preventDefault();
+            	$(".tab").removeClass("active");
+            	$(".content").removeClass("show");
+            	$(this).addClass("active");
+            	$($(this).attr("href")).addClass("show");
+            });
+</script>
+</body>
+</html>
